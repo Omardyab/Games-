@@ -20,18 +20,27 @@ var x = prompt("x=1+4, the value of x is :")
 // enter his age
 // >= 18 && <35 
 //<18 && >35
- var age=prompt("what is your age ?" + y);
- if (age >=18 && age < 36){ alert('Welcome to my website, ' + y)}
- else if (age <18 || age > 35){ alert('sorry not allowed!! ' + y) }
- else { alert('have a nice day, ' + y) }
-// 
+
 
 // guess a password
-var pass=prompt('Try to guess the password ' + y )
+var pass=prompt('Now, try to guess the password ' + y )
 var gpass='easy';
 //while 
-while (pass != gpass){ pass = prompt('Please try again')}
-alert('Nice guess, ' + y);
+while (pass != gpass)
+{ 
+    pass = prompt('Please try again')
+}
+var age=prompt("what is your age ?" + y);
+if (age >=18 && age < 36 && x == 5)
+{ 
+    alert('You are doing well so far :). Welcome to my website, ' + y)
+}
+else if (age <18 || age > 35 || x !=5 )
+{ 
+    alert('sorry not allowed!! ' + y) 
+}
+else { alert('have a nice day, ' + y) }
+
 
 //var gfav=prompt('whats your fav online game ')
 //fav1='League of legends';
@@ -46,7 +55,7 @@ if (x == '5')
     var h=prompt('how many times you would like to see it before downloading it')
     document.write('<h3>' +fav+'</h3>')
     if (fav === 'Cyberpunk 2077')
-    { alert('You have choosen a fantastic game ' +y)
+    { alert('You have choosen a fantastic game, ' +y)
         for (var i=0;i<h;i++)
         {
             document.write('<img src ="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/download2526.jpg">')
@@ -54,7 +63,7 @@ if (x == '5')
     }
     else if (fav === 'League of legends')
     {
-        alert('You have choosen a fantastic game ' +y)
+        alert('You have choosen a fantastic game, ' +y)
         for (var i=0;i<h;i++)
         {  
              document.write('<img src ="https://miro.medium.com/max/3760/1*JzJBaliMfb9R_kEAPQaw5g.png">' )
@@ -63,7 +72,7 @@ if (x == '5')
     }
     else if (fav === 'Dota')
    { 
-       alert('You have choosen a fantastic game ' +y)
+       alert('You have choosen a fantastic game, ' +y)
         for (var i=0;i<h;i++)
         {
             document.write('<img src="http://cdn.dota2.com/apps/dota2/images/blogfiles/mistwoods_blog_dsflkjsdalfkj.jpg">')
